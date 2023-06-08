@@ -1,0 +1,11 @@
+[package]
+name = "ckb-vm-perf-skeleton"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ckb-vm = { git = "https://github.com/xxuejie/ckb-vm", rev = "bbc836f" , features = ["asm"] }
+cpuprofiler = "0.0.4"
+
+[profile.release]
+debug = true
